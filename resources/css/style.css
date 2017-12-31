@@ -1,0 +1,118 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+
+/*header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+.logo em {
+  color: gray;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding-left: 1rem;
+}
+
+/*header*/
+
+.banner {
+  display: flex;
+  background-color: silver;
+  width: 0 auto;
+}
+
+.banner-image {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding-left: 2rem;
+  background-color: pink;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cta h4 {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: dimgray;
+  text-align: center;
+}
+
+/*header*/
+
+.academy.articles {
+  background-color: coral;
+  display: flex;
+  width: 0 auto;
+}
+
+.academy.main {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.academy-image img {
+  width: 100%;
+}
+
+.academy.sub-articles {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 40%;
+  padding-left: 2rem;
+}
+
+.academy.sub {
+  display: flex;
+}
+
+.academy.sub {
+  display: flex;
+}
+
+.academy.sub img {
+  width: 100%;
+}
