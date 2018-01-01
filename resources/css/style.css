@@ -5,6 +5,35 @@ html {
   font-size: 16px;
 }
 
+.sub-article.image {
+  width: 35%;
+  padding: 1rem;
+}
+
+.sub-article.image img {
+  width: 100%;
+}
+
+.sub-article.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  width: 65%;
+}
+
+.sub-article.copy h4 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.sub-article.copy p {
+  padding-bottom: 1rem;
+}
+
+.sub-article.copy a {
+  text-decoration: none;
+}
 
 /*header*/
 
@@ -60,7 +89,6 @@ header nav ul li {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  padding-left: 2rem;
   background-color: pink;
 }
 
@@ -85,6 +113,7 @@ header nav ul li {
   background-color: coral;
   display: flex;
   width: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .academy.main {
@@ -94,15 +123,33 @@ header nav ul li {
 
 .academy-image img {
   width: 100%;
+  padding-bottom: 2rem;
+}
+
+.academy.main .copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.academy.main .copy h2 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.academy.main .copy p {
+  padding-bottom: 1.5rem;
+}
+
+.academy.main .copy span {
+
 }
 
 .academy.sub-articles {
   background-color: blue;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 40%;
-  padding-left: 2rem;
 }
 
 .academy.sub {
@@ -113,6 +160,109 @@ header nav ul li {
   display: flex;
 }
 
-.academy.sub img {
+
+/*course info section*/
+
+.course-info {
+  background-color: silver;
+}
+
+.course-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.course.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 3.5rem;
+  justify-content: center;
+  padding-bottom: 1rem;
+
+}
+
+.course.item {
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course.item img {
   width: 100%;
+}
+
+.course.item .course.copy {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course.copy h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course.copy span {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+/*thesis info section*/
+
+.thesis.info {
+  margin-bottom: 2rem;
+}
+
+#headline {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.thesis.articles {
+  display: flex;
+  width: 0 auto;
+}
+
+.thesis.main {
+  width: 60%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin: 0 1.5rem 1.5rem 2rem;
+}
+
+.thesis.main video {
+  width: 100%;
+}
+
+.thesis.copy h2 {
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.thesis.sub-articles {
+  width: 40%;
+}
+
+.thesis.sub {
+  display: flex;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 4rem;
+  background-color: pink;
+  border-top: solid gray 1px;
+}
+
+#terms span {
+  padding-left: 1rem;
 }
