@@ -1,45 +1,5 @@
 /* Universal Styles */
 
-/* latin roboto */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v18/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
 
 /* latin open sans */
 
@@ -169,7 +129,37 @@ header nav ul li {
   font-weight: 300;
 }
 
-/*header*/
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+    width: 100%;
+  }
+  .mobile ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  Header {
+    background-color: white;
+  }
+
+}
+
+
+/*banner*/
 
 .banner {
   display: flex;
@@ -220,6 +210,22 @@ header nav ul li {
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .banner-image {
+    width: 100%;
+    margin: 0;
+  }
+  .cta {
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
 /*academy info*/
 
 .academy.articles {
@@ -229,7 +235,8 @@ header nav ul li {
 
 .academy.main {
   width: 60%;
-  margin: 2rem 1.5rem;
+  padding: 2rem 2rem 3rem 2rem;
+  border-right: solid 1px silver;
 }
 
 .academy-image img {
@@ -240,25 +247,31 @@ header nav ul li {
 .academy.main .copy {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .academy.main .copy h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 1.5rem;
 }
 
 .academy.main .copy p {
   padding-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
+.academy.main .copy span {
+  font-size: 0.85rem;
+  font-family: helvetica;
+  color: Black;
+}
 
 .academy.sub-articles {
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
   width: 40%;
-  border-left: solid 1px silver;
 }
 
 .academy.sub {
@@ -272,6 +285,51 @@ header nav ul li {
 .academy.sub.lecturer {
   background-color: silver;
   border-right: solid 0.5rem white;
+}
+
+.sub-mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .academy.main {
+    display: none;
+  }
+  .academy.sub-articles {
+    width: 100%;
+  }
+  .academy.sub {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sub-article.image img {
+    display: none;
+  }
+  .sub-article.image {
+    width: 90%;
+    padding: 1;
+  }
+  .sub-article.image .sub-mobile {
+    display: block;
+  }
+  .cta h2 {
+    font-size: 2rem;
+  }
+  .cta h4 {
+    font-size: 1.2rem;
+  }
+  .sub-article.copy {
+    width: 90%;
+    padding: 1rem;
+  }
+  .academy.sub.lecturer {
+    background-color: rgb(238,238,238);
+    border-right: none;
+  }
+  .academy.sub.orientation {
+    border-bottom: none;
+  }
 }
 
 /*course info section*/
@@ -333,6 +391,40 @@ header nav ul li {
 line-height: 1.2;
 }
 
+.mobile-item {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .course.item {
+    display: none;
+  }
+  .course-info {
+    background-color: white;
+
+  }
+  .mobile-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .mobile-item span {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    background-color: rgb(238,238,238);
+    color: rgb(70,70,70);
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .course-info {
+    padding-bottom: 2rem;
+  }
+
+}
+
+
 /*thesis info section*/
 
 .thesis.info {
@@ -354,8 +446,6 @@ line-height: 1.2;
 
 .thesis.main {
   width: 60%;
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin: 0 1.5rem 1.5rem 2rem;
 }
 
@@ -382,6 +472,22 @@ line-height: 1.2;
   display: flex;
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis.main .thesis.copy {
+    display: none;
+  }
+  .thesis.sub-articles {
+    display: none;
+  }
+  .thesis.main {
+    width: 100%;
+    margin: 0;
+  }
+  .thesis.info {
+    margin-bottom: 0;
+  }
+}
+
 /*footer*/
 
 footer {
@@ -396,4 +502,16 @@ footer {
 
 #terms span {
   padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+  #terms {
+    display: none;
+  }
+  footer {
+    background-color: rgb(238,238,238);
+    margin-top: 1.5rem;
+    border-top: none;
+  }
 }
