@@ -1,8 +1,95 @@
 /* Universal Styles */
 
+/* latin roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v18/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin open sans */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hhampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+
+
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 16px;
+  color: rgb(70,70,70);
+  background-color: rgb(238,238,238);
 }
 
 .sub-article.image {
@@ -18,7 +105,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
   width: 65%;
 }
 
@@ -33,6 +119,8 @@ html {
 
 .sub-article.copy a {
   text-decoration: none;
+  color: rgb(0, 133, 255);
+  font-weight: 600;
 }
 
 /*header*/
@@ -41,9 +129,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 4.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  background-color: rgb(161,145,145);
 }
 
 .logo {
@@ -52,11 +141,22 @@ header {
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 3.2rem;
+  padding-right: 0.2rem;
+}
+
+.logo span {
+  font-size: 1.5rem;
+}
+
+#colmar {
+  font-weight: normal;
+  color: Black;
 }
 
 .logo em {
-  color: gray;
+  color: white;
+  font-weight: normal;
 }
 
 header nav ul {
@@ -65,6 +165,8 @@ header nav ul {
 
 header nav ul li {
   padding-left: 1rem;
+  color: white;
+  font-weight: 300;
 }
 
 /*header*/
@@ -89,31 +191,40 @@ header nav ul li {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  background-color: pink;
+}
+
+.cta-box {
+  width: 80%;
 }
 
 .cta h2 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   padding-bottom: 2rem;
+  font-weight: 700;
+
 }
 
 .cta h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .button {
-  background-color: dimgray;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+  display: block;
+  background-color: rgb(70,70,70);
   text-align: center;
+  padding: 0.5rem 0;
 }
 
-/*header*/
+/*academy info*/
 
 .academy.articles {
-  background-color: coral;
   display: flex;
   width: 0 auto;
-  padding-bottom: 2rem;
 }
 
 .academy.main {
@@ -133,6 +244,7 @@ header nav ul li {
 
 .academy.main .copy h2 {
   font-size: 2rem;
+  font-weight: 600;
   padding-bottom: 1.5rem;
 }
 
@@ -140,26 +252,27 @@ header nav ul li {
   padding-bottom: 1.5rem;
 }
 
-.academy.main .copy span {
-
-}
 
 .academy.sub-articles {
-  background-color: blue;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  padding-top: 1rem;
   width: 40%;
+  border-left: solid 1px silver;
 }
 
 .academy.sub {
   display: flex;
 }
 
-.academy.sub {
-  display: flex;
+.academy.sub.orientation {
+  border-bottom: solid 3px silver;
 }
 
+.academy.sub.lecturer {
+  background-color: silver;
+  border-right: solid 0.5rem white;
+}
 
 /*course info section*/
 
@@ -168,6 +281,7 @@ header nav ul li {
 }
 
 .course-info h2 {
+  font-weight: 700;
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
@@ -199,14 +313,24 @@ header nav ul li {
   margin-bottom: 1.5rem;
 }
 
+.course.copy {
+  font-weight: 300;
+}
+
 .course.copy h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  color: rgb(70,70,70);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .course.copy span {
   display: block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.course.copy p {
+line-height: 1.2;
 }
 
 /*thesis info section*/
@@ -220,6 +344,7 @@ header nav ul li {
   font-size: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-weight: 700;
 }
 
 .thesis.articles {
@@ -236,6 +361,11 @@ header nav ul li {
 
 .thesis.main video {
   width: 100%;
+}
+
+.thesis.sub.design {
+  background-color: silver;
+  border-right: solid 0.5rem white;
 }
 
 .thesis.copy h2 {
@@ -259,8 +389,9 @@ footer {
   justify-content: space-between;
   padding: 1rem 2rem;
   height: 4rem;
-  background-color: pink;
-  border-top: solid gray 1px;
+  border-top: solid 1px silver;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 #terms span {
